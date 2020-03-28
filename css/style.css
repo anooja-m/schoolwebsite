@@ -4,13 +4,16 @@
 	}
 
 header{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../pic1.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/pic1.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	font-family: 'Oswald', sans-serif;;
+	font-family: 'Poppins', sans-serif;
 }
 
+h1{
+	font-family: 'Poppins', sans-serif;
+}
 
 
 ul{
@@ -27,6 +30,7 @@ ul li a{
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: 0.6s ease;
+    font-family: 'Poppins', sans-serif;
 }
 ul li a:hover{
 	background-color: #fff;
@@ -53,7 +57,7 @@ ul li.active a{
 	color: #fff;
 	font-size: 70px;
 	justify-content: center;
-	font-family: 'Oswald', sans-serif;
+
 	text-align: center;
 }
 .buttonn{
@@ -69,6 +73,7 @@ ul li.active a{
 	color: #fff;
 	text-decoration: none;
 	transition: 0.6s ease;
+	font-family: 'Poppins', sans-serif;
 
 }
 
@@ -84,209 +89,37 @@ section{
 	background-position: center;
 }
 #cardrow{
-	font-family: 'Roboto', sans-serif;
+	padding-left: 20%;
+	padding-right: 20%
+	font-family: 'Poppins', sans-serif;
 }
 .cardtitle{
+	padding-top: 10%;
+	padding-left: 20%;
+	padding-right: 20%
 	text-align: center;
 	
-	font-family: 'Bree Serif', serif;
-	
-	
-	
+	font-family: 'Poppins', sans-serif;
 }
 
+.subtitle{
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+	padding-left: 30%;
+	padding-right: 30%
+	padding-bottom:20%;
+	text-decoration: underline;
 
-/* General Buttons */
-button {
-  width: 130px;
-  height: 40px;
-  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
-  border: none;
-  border-radius: 5px;
-  position: relative;
-  border-bottom: 4px solid #2b8bc6;
-  color: #fbfbfb;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-  font-size: 15px;
-  text-align: left;
-  text-indent: 5px;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
-  cursor: pointer;
-
-/* Just for presentation */  
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-button:active {
-  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
-  top: 1px;
 }
 
-button:after {
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-top: 20px solid #187dbc;
-  border-bottom: 20px solid #187dbc;
-  border-left: 16px solid transparent;
-  border-right: 20px solid #187dbc;
-  position: absolute;
-  opacity: 0.6; 
-  right: 0;
-  top: 0;
-  border-radius: 0 5px 5px 0;  
-}
-
-/* Button pointing left */
-
-button.back {
-  text-align: right;
-  padding-right: 50px;
-  box-sizing: border-box;
-}
-button.back:after {
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-top: 20px solid #187dbc;
-  border-bottom: 20px solid #187dbc;
-  border-right: 16px solid transparent;
-  border-left: 20px solid #187dbc;
-  position: absolute;
-  opacity: 0.6; 
-  left: 0;
-  top: 0;
-  border-radius: 5px 0 0 5px;    
-}
-
-/* Single buttons */
-
-button.site {
-  width: 40px;
-  text-align: center;
-  text-indent: 0;
-}
-button.site:after{
-  display: none;
+.ad{
+	font-family: 'Poppins', sans-serif;
 }
 
 
 
+ 
 
-
-/* Presentation stuff */
-.holder {
-  width: 400px;
-  background: #efefef;
-  padding: 30px 10px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 20px;  
-  text-align: center;
-}
-.searchtitle{
-	font-size: 70px;
-font-family: 'Cookie', cursive;
-}
-.float-right{
-  float: right;
-}
-.fa{
- font-size: .8em;
-  line-height: 22px !important;
-}
-dropdown{
-   display: inline-block;
-   margin: 20px 50px; 
-}
-dropdown label, dropdown ul li{
-  display: block;
-  width: 200px;
-  background: #ECF0F1;
-  padding: 15px 20px;
-}
-dropdown label:hover, dropdown ul li:hover{
-  background: #1ABC9C;
-  color: white;
-  cursor: pointer;
-}
-dropdown label{
-  color: #1ABC9C;
-  border-left: 4px solid #1ABC9C;
-  border-radius: 0 5px 0 0; 
-  position: relative;
-  z-index: 2;
-}
-dropdown input{
-  display: none;
-}
-dropdown input ~ ul{
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  top: -20px;
-  z-index: 1;
-}
-dropdown input:checked + label{
-  background: #1ABC9C;
-  color: white;
-}
-
-dropdown input:checked ~ ul{
-  visibility: visible;
-  opacity: 1;
-  top: 0;
-}
-$colors: #E74C3C, #0072B5, #2C3E50;
-
-@for $i from 1 through length($colors) {
-  dropdown ul li:nth-child(#{$i}) {
-    border-left: 4px solid nth($colors, $i);
-    .fa{
-      color: nth($colors, $i);
-    }
-    &:hover {
-        background: nth($colors, $i);
-        color: white;
-      .fa{
-        color: white; 
-      }
-    }
-  }
-}
-
-.animate{
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;  
-  backface-visibility:hidden;
-  -webkit-backface-visibility:hidden; /* Chrome and Safari */
-  -moz-backface-visibility:hidden; /* Firefox */
-  -ms-backface-visibility:hidden; /* Internet Explorer */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 	
 
 
 .site-footer
@@ -302,6 +135,8 @@ $colors: #E74C3C, #0072B5, #2C3E50;
   border-top-color:#bbb;
   opacity:0.5
 }
+
+
 .site-footer hr.small
 {
   margin:20px 0

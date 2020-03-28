@@ -1,37 +1,28 @@
-var dropdown = $('.dropdown');
-var item = $('.item');
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-item.on('click', function() {
-  item.toggleClass('collapse');
-  
-  if (dropdown.hasClass('dropped')) {
-    dropdown.toggleClass('dropped');
-  } else {
-    setTimeout(function() {
-      dropdown.toggleClass('dropped');
-    }, 150);
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
   }
-})
-
-var animateButton = function(e) {
-
-  e.preventDefault;
-  //reset animation
-  e.target.classList.remove('animate');
-  
-  e.target.classList.add('animate');
-  setTimeout(function(){
-    e.target.classList.remove('animate');
-  },700);
-};
-
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-for (var i = 0; i < bubblyButtons.length; i++) {
-  bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
 
 $('.menu .item')
   .tab()
 ;
+
+
+
+
