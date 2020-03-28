@@ -104,9 +104,8 @@ section{
 
 .subtitle{
 
-	padding-left: 30%;
-	padding-right: 30%
-	padding-bottom:20%;
+	padding-left: 40%;
+	padding-right: 40%;
 	text-decoration: underline;
 
 }
@@ -118,9 +117,20 @@ section{
 
 
  
+.find{
+	margin: auto;
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 70%;
+}
+ .findtitle{
+ margin: auto;
+ padding-left: 5%;
 
- 	
-
+ }	
+.findbtn{
+	padding-left: 17%;
+}
 
 .site-footer
 {
