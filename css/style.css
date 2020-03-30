@@ -13,6 +13,7 @@ header{
 
 h1{
 	font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 
@@ -20,25 +21,60 @@ h1{
 	float: right;
 	list-style-type: none;
     margin-top: 5px;
-    padding-top: 1%;
+    padding-top: 2%;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+.top{
+  margin-left: 2% !important;
+  
 }
 ul li{
 	display: inline-block;
 }
-ul li a{
+.topnav ul li a{
 	text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
+    padding: 5px 10px;
     border: 1px solid transparent;
     transition: 0.6s ease;
     font-family: 'Poppins', sans-serif;
 }
-ul li a:hover{
+.topnav ul li a:hover{
 	background-color: #fff;
 	color: #000;
 
 }
-ul li.active a{
+.topnav ul li.active a{
 	background-color: #fff;
 	color: #000;
 
@@ -67,11 +103,14 @@ ul li.active a{
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+
+
 }
+
 
 .btnn{
 	border: 1px solid #fff;
-	padding: 10px 30px;
+	padding: 10px 10px;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.6s ease;
@@ -88,34 +127,83 @@ ul li.active a{
 
 
 
-
-section{
-	
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
-#cardrow{
-	padding-left: 13vw;
-	padding-right: 12vw;
-	font-family: 'Poppins', sans-serif;
+@media (max-width: 768px) {
+  .btnn {
+    font-size:9px;
+    padding:4px 6px;
+  }
 }
 
-.ad{
-	padding-left: 2%;
+@media (min-width: 768px) {
+  .btnn {
+    font-size:11px;
+    padding:6px 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btnn {
+    font-size:13px;
+    padding:8px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btnn {
+    padding:10px 16px;
+    font-size:17px;
+  }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+   {
+         .btnn {
+    font-size:10px;
+    padding:4px 6px;
+  }
+}
+@media (max-device-width: 319px) {
+  .btnn {
+    padding:2px 4px;
+    font-size:8px;
+  }
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .btnn {
+    font-size:8px;
+    padding:8px 9px;
+
+}
+}
+.centerx{
+  justify-content: center !important;
+  margin: 12px !important;
+}
+
+.row-ad{
+  background: linear-gradient(to bottom, #669999 0%, #666699 100%) !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  justify-content: center !important;
 }
 .adtext{
 	text-align: center;
 	padding-top: 5%;
 	padding-bottom: 3%;
-padding-left: 30%;
-padding-right: 25%;
+margin-left: 5vw;
+margin-right: 5vw;
 
 }
 .adbtn{
 	padding-top: 10%;
 	border-radius: 4px;
-  background-color:#4d4dff;                          
+  background: linear-gradient(to bottom, #cc3300 0%, #cc3300 100%);                          
   border: none;
   color: #FFFFFF;                 
   text-align: center;
@@ -124,10 +212,9 @@ padding-right: 25%;
   width: 300px;
   transition: all 0.5s;
   cursor: pointer;
-  margin-left: 35vw;
   margin-bottom: 3%;
   
-
+justify-content: center;
 }
 .adbtn span {
   cursor: pointer;
@@ -158,15 +245,6 @@ padding-right: 25%;
  padding-bottom: 10%;
 
  }	
-.intro {
-  font-size: .85rem;
-  margin-bottom: 32px;
-  line-height: 1.6;
-}
-
- .lead {
-  margin-top: 0;
-}
 
 .underline-small{
   color:green;
@@ -254,7 +332,7 @@ padding-right: 25%;
   height:40px;
   line-height:40px;
   margin-left:6px;
-  margin-right:0;
+  margin-right:6px;
   border-radius:100%;
   background-color:#33353d
 }
@@ -351,5 +429,3 @@ padding-right: 25%;
     font-weight:600
   }
 }
-
-
