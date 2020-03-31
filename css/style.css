@@ -184,6 +184,7 @@ ul li{
 .centerx{
   justify-content: center !important;
   margin: 12px !important;
+
 }
 
 .row-ad{
@@ -245,6 +246,10 @@ justify-content: center;
  padding-bottom: 10%;
 
  }	
+.find ul li{
+  padding-left: 30px;
+  padding-top: 20px;
+}
 
 .underline-small{
   color:green;
