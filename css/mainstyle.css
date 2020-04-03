@@ -22,19 +22,22 @@ h1{
 p{
 	font-size: 17px;
 }
-.top-sec{
-	padding-top: 2%;
-padding-left: 5%;
-	background-color:#f2f2f2;
-	padding-bottom: 2%;
-}
 
-.sub-super{
-	background-color: #f2f2f2 !important;
-	padding-left: 4% !important;
-	padding-bottom: 3% !important;
-	padding-right: 4% !important;
+.top-sec{
 	padding-top: 2% !important;
+
+	background-color:#000066 !important;
+	
+	color: #fff !important;
+}
+.over{
+	background-color: #000066;
+	color: #fff;
+}
+.sub-super{
+	background-color: #F8F8F8 !important;
+	padding-left: 1%;
+	padding-bottom: 1%;
 }
 #next-part{
 	
@@ -60,17 +63,17 @@ padding-left: 5%;
 
 .title{
 	position: absolute;
-	top: 30%;
-	left:7%;
-	
+	top: 70%;
+	left: 60%;
+
 }
 .title h1{
 	color: #fff;
 
-	font-size: 6vw;
+	font-size: 5vw;
 
 
-	text-align: center;
+	text-align: center ;
 }
 
 
